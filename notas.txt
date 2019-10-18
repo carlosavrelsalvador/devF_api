@@ -1,0 +1,44 @@
+// nombre = carlosavrelsalvador@gmail.com
+// contraseña =  holaMundo / gI0OnVLNKKuNzhV9
+// connect to Cluster0 'mongodb+srv://carlosavrelsalvador:gI0OnVLNKKuNzhV9@cluster0-q53vc.mongodb.net/test?retryWrites=true&w=majority'
+// MERN = stack de tecnologias
+
+Nombre del proyecto= "pendiente"
+Schema 
+->Curso (generico  )
+	duracion: horas
+	instructor: String
+	numero de lecciones: int
+	calificacion: double
+	nivel: string
+	Descripcion: String
+	codigoCurso: String
+	nombre:String
+	categoria:String
+	cantidad de participantes maxima
+
+->Alumno
+	nombre
+	apellido
+	codigoAlumno
+	sexo
+	curso inscrito (collection)
+	correo
+	contacto telefono
+
+->Instructor
+	codigo
+	nombre
+	apellido
+	sexo
+	curso inscrito (collection) => cursos donde es alumno
+	habilitaciones (collection) => son los cursos que imparte
+
+->EventoInstruccion (es el desarrollo de un curso, no tiene fecha cierre)
+	fecha inicio 
+	fecha fin = null
+
+>Categorias de cursos
+	nombre categoria
+	numero de cursos
+
